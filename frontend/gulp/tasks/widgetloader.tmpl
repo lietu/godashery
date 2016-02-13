@@ -1,0 +1,8 @@
+let list: any[] = [];
+
+{{#each widgets}}
+import * as {{name}} from "{{path}}";
+list.push({{name}});
+{{/each}}
+
+export var foo = list;

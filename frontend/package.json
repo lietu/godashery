@@ -1,0 +1,18 @@
+{
+  "private": "true",
+  "engines": {},
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "glob": "^7.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-typescript": "^2.11.0",
+    "gulp-watch": "^4.3.5",
+    "handlebars": "^4.0.5",
+    "run-sequence": "^1.1.5",
+    "tsify": "^0.13.2",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
