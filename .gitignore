@@ -4,3 +4,6 @@ frontend/public/*.js
 frontend/public/main.css
 frontend/src/widgetloader.ts
 frontend/public/vendor/
+frontend/src/vendor/
+frontend/src/*.js
+frontend/src/widgets/*.js

@@ -4,6 +4,7 @@
   "scripts": {},
   "devDependencies": {},
   "dependencies": {
+    "blocks": "^0.3.4",
     "browserify": "^13.0.0",
     "glob": "^7.0.0",
     "gulp": "^3.9.1",
