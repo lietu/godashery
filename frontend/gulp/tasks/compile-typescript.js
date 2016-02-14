@@ -12,6 +12,12 @@ gulp.task('compile-typescript', function () {
         .add('main.ts')
         .plugin(tsify, {noImplicitAny: true});
 
+    var definitions = glob.sync(TYPESCRIPT + "/definitions/**/*.d.ts");
+    definitions.forEach(function (file) {
+        file = file.replace(new RegExp("^" + TYPESCRIPT + "/"), '');
+        bundler.add(file);
+    });
+
     var widgets = [];
 
     var widgetFiles = glob.sync(TYPESCRIPT + "/widgets/**/*.ts");
@@ -26,7 +32,7 @@ gulp.task('compile-typescript', function () {
         bundler.add(file);
     });
 
-    var loaderTemplate = fs.readFileSync(__dirname + "/widgetloader.tmpl");
+    var loaderTemplate = fs.readFileSync(__dirname + "/widgetloader.hbs");
     var tmpl = Handlebars.compile(String(loaderTemplate));
     var loader = tmpl({widgets: widgets});
 
