@@ -34,3 +34,10 @@ The backend will serve the built frontend files if you don't want to set that up
 Add your server-side code to `widgets/mywidget.go`. Frontend logic goes to `frontend/src/widgets/mywidget.ts`
  
 Check existing ones for examples.
+
+
+# Financial support
+
+This project has been made possible thanks to [Cocreators](https://cocreators.ee) and [Lietu](https://lietu.net). You can help us continue our open source work by supporting us on [Buy me a coffee](https://www.buymeacoffee.com/cocreators).
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/cocreators)
